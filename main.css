@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* Body du site */
 body {
     margin: 0;
     padding: 0;
@@ -14,11 +15,12 @@ body {
 
     main {
         padding: 20px;
-        margin: 0;
+        margin: auto;
         max-width: 600px;
     }
 }
 
+/* Liens hypertext */
 a {
     text-underline: none;
     color: var(--Vert_salade);
@@ -29,6 +31,7 @@ a {
     }
 }
 
+/* Titres principaux */
 h1, h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -44,8 +47,47 @@ h2 {
     margin: 60px 0 20px 0;
 }
 
+/* Paragraphe */
+
 p {
     line-height: 1.5;
+}
+
+.text-intro {
+    font-size: 1.3rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/* Listes à puces */
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 95%;
+    margin: 40px auto;
+
+    li {
+        background: var(--Beige_pain);
+        color: var(--Blanc);
+        padding: 10px 40px;
+
+        &:first-child {
+            border-radius: 30px 30px 0 0;
+        }
+
+        &:last-child {
+            border-radius: 0 0 30px 30px;
+        }
+
+        &.yellow {
+            border-bottom: var(--Jaune_fromage) solid 5px;
+        }
+
+        &.green {
+            border-bottom: var(--Vert_salade) solid 10px;
+            background: var(--Brun_viande);
+        }
+    }
 }
 
 /********************* HEADER *********************/
@@ -62,6 +104,20 @@ header {
 
 /********************* FOOTER *********************/
 
+footer {
+    background: var(--Brun_viande);
+    color: var(--Blanc);
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto 40px;
+    max-width: 400px;
+    min-height: 50px;
+    border-top: solid 30px var(--Beige_pain);
+    border-bottom: solid 30px var(--Beige_pain);
+    border-radius: 30px;
+}
+
+/* Variables des couleurs du site */
 :root {
     --Beige_pain : #E8A062;
     --Brun_viande : #823922;
