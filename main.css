@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, 'sans-serif';
+    font-weight: 400;
+    font-size: 120%;
+    line-height: 1.4;
+    color: var(--Noir);
+    background: var(--Blanc);
+
+    main {
+        padding: 20px;
+        margin: 0;
+        max-width: 600px;
+    }
+}
+
+a {
+    text-underline: none;
+    color: var(--Vert_salade);
+
+    &:hover {
+        color: var(--Beige_pain);
+        cursor: pointer;
+    }
+}
+
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: var(--Jaune_fromage);
+    font-size: 4rem;
+    line-height: 0.9;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 60px 0 20px 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/********************* HEADER *********************/
+
+header {
+    background: var(--Noir);
+    text-align: center;
+    padding: 10px;
+
+    img {
+        max-height: 160px;
+    }
+}
+
+/********************* FOOTER *********************/
+
+:root {
+    --Beige_pain : #E8A062;
+    --Brun_viande : #823922;
+    --Vert_salade : #00A24B;
+    --Jaune_fromage : #FDC032;
+    --Blanc : #ffffff;
+    --Noir : #000000;
+}
