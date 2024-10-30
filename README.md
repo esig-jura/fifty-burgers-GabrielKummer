@@ -1,3 +1,6 @@
+# Fifty Burger - Gabriel Kummer
+* https://esig-jura.github.io/fifty-burgers-GabrielKummer/
+
 # Exercice Fifty Burgers
 
   * **Exemple de solution :** http://kode.ch/fifty-burgers/
